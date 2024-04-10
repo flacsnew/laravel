@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MyPageController extends Controller
+class MyController extends Controller
 {
     public function index()
     {
-        return 'My Page in controller';
+        return 'Example Page!';
     }
 }
