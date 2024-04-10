@@ -21,6 +21,8 @@
 
 ```./vendor/bin/sail artisan migrate```
 
+```./vendor/bin/sail artisan migrate:rollback```
+
 ### Запуск
 
 ```http://localhost:8070/```
