@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/my_page',  [App\Http\Controllers\MyPageController::class, 'index']);
-
-Route::get('/posts',  [App\Http\Controllers\PostController::class, 'index']);
+Route::get('/example', function(){
+    return 'Example Page';
+});
 
