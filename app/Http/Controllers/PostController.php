@@ -9,12 +9,10 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::where('is_published', 1)->get();
-        foreach ($posts as $post)
-        {
-            dump($post->title);
-        }
-        dd('end.');
+        $posts = Post::all();
+        $h1 = 'Hello World';
+        return view('posts', compact('posts', 'h1'));
+//        dd($posts);
     }
 
     public function create()
